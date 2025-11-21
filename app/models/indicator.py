@@ -1,3 +1,4 @@
+ 
 from datetime import datetime
 from sqlalchemy import Column, Integer, String, Float, DateTime, ForeignKey, UniqueConstraint, JSON
 from sqlalchemy.orm import relationship
@@ -23,3 +24,4 @@ class Indicator(Base):
     source = relationship("Source", back_populates="indicators")
     zone = relationship("Zone", back_populates="indicators")
     created_by = relationship("User", back_populates="indicators")
+

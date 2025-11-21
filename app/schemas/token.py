@@ -1,3 +1,4 @@
+ 
 from pydantic import BaseModel
 
 
@@ -9,3 +10,4 @@ class Token(BaseModel):
 class TokenPayload(BaseModel):
     sub: str
     role: str
+

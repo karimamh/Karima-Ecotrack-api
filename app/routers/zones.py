@@ -1,3 +1,4 @@
+ 
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from app.core.db import get_db
@@ -42,3 +43,4 @@ def delete_zone(zone_id: int, db: Session = Depends(get_db)):
     db.delete(zone)
     db.commit()
     return None
+

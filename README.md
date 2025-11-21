@@ -1,3 +1,4 @@
+ 
 # EcoTrack (version simple)
 
 API FastAPI + SQLite pour suivre des indicateurs environnementaux (OpenAQ et Open-Meteo). Authentification JWT, rôles user/admin, CRUD de base.
@@ -37,3 +38,4 @@ Front minimal (HTML/JS) : http://localhost:8000/static/index.html
 ## Données externes
 - OpenAQ (qualité de l'air, v3 nécessite une clé) : utilise `locations/{id}/latest` autour d'une zone (env `OPENAQ_API_KEY`)
 - Open-Meteo (météo) : https://api.open-meteo.com/v1/forecast
+

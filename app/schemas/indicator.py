@@ -1,3 +1,4 @@
+ 
 from datetime import datetime
 from typing import Any, Dict, Optional
 from pydantic import BaseModel, Field
@@ -34,3 +35,4 @@ class IndicatorOut(IndicatorBase):
 class PaginatedIndicators(BaseModel):
     total: int = Field(..., description="Nombre total")
     items: list[IndicatorOut]
+

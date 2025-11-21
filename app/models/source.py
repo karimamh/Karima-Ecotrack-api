@@ -1,3 +1,4 @@
+ 
 from datetime import datetime
 from sqlalchemy import Column, Integer, String, DateTime
 from sqlalchemy.orm import relationship
@@ -14,3 +15,4 @@ class Source(Base):
     last_sync = Column(DateTime, nullable=True)
 
     indicators = relationship("Indicator", back_populates="source")
+

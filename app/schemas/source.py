@@ -1,3 +1,4 @@
+ 
 from typing import Optional
 from datetime import datetime
 from pydantic import BaseModel
@@ -25,3 +26,4 @@ class SourceOut(SourceBase):
     last_sync: Optional[datetime] = None
 
     model_config = {"from_attributes": True}
+

@@ -1,3 +1,4 @@
+ 
 import argparse
 from app.core.db import SessionLocal, engine
 from app.core.db import Base
@@ -35,3 +36,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

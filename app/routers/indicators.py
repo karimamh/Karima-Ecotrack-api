@@ -1,3 +1,4 @@
+ 
 from datetime import datetime
 from typing import Optional
 from fastapi import APIRouter, Depends, HTTPException, status
@@ -71,3 +72,4 @@ def delete_indicator(indicator_id: int, db: Session = Depends(get_db)):
     db.delete(indicator)
     db.commit()
     return None
+

@@ -1,3 +1,4 @@
+ 
 from datetime import datetime
 from typing import List, Dict, Any
 import requests
@@ -32,3 +33,4 @@ def fetch_openmeteo(lat: float, lon: float, days: int = 3) -> List[Dict[str, Any
         if idx < len(wind):
             out.append({"type": "windspeed", "value": wind[idx], "unit": units.get("wind_speed_10m", "m/s"), "timestamp": dt, "extra": {"lat": lat, "lon": lon}})
     return out
+

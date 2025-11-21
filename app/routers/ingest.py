@@ -1,3 +1,4 @@
+ 
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from sqlalchemy.exc import IntegrityError
@@ -85,3 +86,4 @@ def ingest_openmeteo(lat: float, lon: float, zone_id: int, days: int = 3, db: Se
             continue
         inserted += 1
     return {"inserted": inserted, "total": len(data)}
+
