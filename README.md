@@ -1,3 +1,4 @@
+u200B
  
 # EcoTrack (version simple)
 
@@ -38,4 +39,5 @@ Front minimal (HTML/JS) : http://localhost:8000/static/index.html
 ## Données externes
 - OpenAQ (qualité de l'air, v3 nécessite une clé) : utilise `locations/{id}/latest` autour d'une zone (env `OPENAQ_API_KEY`)
 - Open-Meteo (météo) : https://api.open-meteo.com/v1/forecast
+
 

@@ -1,3 +1,4 @@
+u200B
  
 from datetime import datetime
 from sqlalchemy import Boolean, Column, DateTime, Integer, String
@@ -18,4 +19,5 @@ class User(Base):
     created_at = Column(DateTime, default=datetime.utcnow)
 
     indicators = relationship("Indicator", back_populates="created_by")
+
 

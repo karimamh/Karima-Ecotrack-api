@@ -1,3 +1,4 @@
+u200B
  
 from datetime import datetime
 from typing import Optional
@@ -26,4 +27,5 @@ def average(indicator_type: str, zone_id: Optional[int] = None, from_date: Optio
     label_expr = func.strftime("%Y-%m-%d", Indicator.timestamp)
     rows = query.with_entities(label_expr.label("label"), func.avg(Indicator.value).label("avg")).group_by("label").order_by("label").all()
     return {"labels": [r.label for r in rows], "series": [{"name": indicator_type, "data": [round(r.avg, 3) if r.avg else None for r in rows]}]}
+
 

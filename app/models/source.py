@@ -1,3 +1,4 @@
+u200B
  
 from datetime import datetime
 from sqlalchemy import Column, Integer, String, DateTime
@@ -15,4 +16,5 @@ class Source(Base):
     last_sync = Column(DateTime, nullable=True)
 
     indicators = relationship("Indicator", back_populates="source")
+
 

@@ -1,3 +1,4 @@
+u200B
  
 from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
@@ -30,4 +31,5 @@ def admin_required(current_user: User = Depends(get_current_active_user)) -> Use
     if current_user.role != "admin":
         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Réservé aux admins")
     return current_user
+
 

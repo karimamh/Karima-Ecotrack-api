@@ -1,3 +1,4 @@
+u200B
  
 from sqlalchemy import Column, Integer, String, Float
 from sqlalchemy.orm import relationship
@@ -14,4 +15,5 @@ class Zone(Base):
     longitude = Column(Float, nullable=True)
 
     indicators = relationship("Indicator", back_populates="zone")
+
 
