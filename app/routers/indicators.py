@@ -1,4 +1,5 @@
 u200B
+u200B
  
 from datetime import datetime
 from typing import Optional
@@ -73,5 +74,6 @@ def delete_indicator(indicator_id: int, db: Session = Depends(get_db)):
     db.delete(indicator)
     db.commit()
     return None
+
 
 

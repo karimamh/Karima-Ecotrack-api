@@ -1,4 +1,5 @@
 u200B
+u200B
  
 from datetime import datetime
 from sqlalchemy import Column, Integer, String, Float, DateTime, ForeignKey, UniqueConstraint, JSON
@@ -25,5 +26,6 @@ class Indicator(Base):
     source = relationship("Source", back_populates="indicators")
     zone = relationship("Zone", back_populates="indicators")
     created_by = relationship("User", back_populates="indicators")
+
 
 

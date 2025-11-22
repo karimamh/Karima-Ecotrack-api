@@ -1,4 +1,5 @@
 u200B
+u200B
  
 import argparse
 from app.core.db import SessionLocal, engine
@@ -37,5 +38,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 

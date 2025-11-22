@@ -1,4 +1,5 @@
 u200B
+u200B
  
 from datetime import datetime
 from typing import Optional
@@ -31,5 +32,6 @@ class UserOut(UserBase):
     created_at: datetime
 
     model_config = {"from_attributes": True}
+
 
 

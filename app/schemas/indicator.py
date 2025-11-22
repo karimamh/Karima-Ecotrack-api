@@ -1,4 +1,5 @@
 u200B
+u200B
  
 from datetime import datetime
 from typing import Any, Dict, Optional
@@ -36,5 +37,6 @@ class IndicatorOut(IndicatorBase):
 class PaginatedIndicators(BaseModel):
     total: int = Field(..., description="Nombre total")
     items: list[IndicatorOut]
+
 
 

@@ -1,4 +1,5 @@
 u200B
+u200B
  
 from datetime import datetime
 from typing import List, Dict, Any
@@ -61,5 +62,6 @@ def fetch_openaq(lat: float, lon: float, api_key: str | None, radius_m: int = 10
             }
         )
     return out
+
 
 

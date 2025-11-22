@@ -1,4 +1,5 @@
 u200B
+u200B
  
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -40,5 +41,6 @@ def startup():
 @app.get("/")
 def root():
     return {"message": "EcoTrack API"}
+
 
 

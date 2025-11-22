@@ -1,4 +1,5 @@
 u200B
+u200B
  
 from datetime import datetime, timedelta
 from app.core.db import SessionLocal, engine, Base
@@ -55,5 +56,6 @@ def seed():
 
 if __name__ == "__main__":
     seed()
+
 
 

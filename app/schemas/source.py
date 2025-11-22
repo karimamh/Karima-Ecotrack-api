@@ -1,4 +1,5 @@
 u200B
+u200B
  
 from typing import Optional
 from datetime import datetime
@@ -27,5 +28,6 @@ class SourceOut(SourceBase):
     last_sync: Optional[datetime] = None
 
     model_config = {"from_attributes": True}
+
 
 

@@ -1,4 +1,5 @@
 u200B
+u200B
  
 from typing import Optional
 from pydantic import BaseModel
@@ -26,5 +27,6 @@ class ZoneOut(ZoneBase):
     id: int
 
     model_config = {"from_attributes": True}
+
 
 

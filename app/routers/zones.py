@@ -1,4 +1,5 @@
 u200B
+u200B
  
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
@@ -44,5 +45,6 @@ def delete_zone(zone_id: int, db: Session = Depends(get_db)):
     db.delete(zone)
     db.commit()
     return None
+
 
 
